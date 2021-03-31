@@ -1,0 +1,69 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "object",
+  "properties": {
+    "partnerProfiles": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "internalId": {
+              "type": "string"
+            },
+            "identities": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "externalIdType": {
+                      "type": "string"
+                    },
+                    "externalIdValue": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "externalIdType",
+                    "externalIdValue"
+                  ]
+                }
+              ]
+            },
+            "corporation": {
+              "type": "object",
+              "properties": {
+                "corporationName": {
+                  "type": "string"
+                },
+                "orgUnitName": {
+                  "type": "string"
+                },
+                "status": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "corporationName",
+                "orgUnitName",
+                "status"
+              ]
+            }
+          },
+          "required": [
+            "internalId",
+            "identities"
+          ]
+        }
+      ]
+    },
+    "totalRecordCount": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "partnerProfiles",
+    "totalRecordCount"
+  ]
+}

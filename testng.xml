@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="APPLICATION REST API VALIDATION">
+
+	<test name="Board crud">
+		<classes>
+			<class name="com.apps.testcases.BoardCrud"></class>
+		</classes>
+	</test>
+		
+	
+
+	
+
+</suite>
