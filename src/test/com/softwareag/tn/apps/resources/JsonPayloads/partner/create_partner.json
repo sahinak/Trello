@@ -1,0 +1,13 @@
+{
+  "corporation": {
+    "corporationName": "REPLACE_PARTNER_NAME",
+    "orgUnitName": "REPLACE_PARTNER_ORG_UNIT",
+    "status": "Active"
+  },
+  "identities": [
+    {
+      "externalIdType": "REPLACE_PARTNER_EXT_ID_TYPE",
+      "externalIdValue": "REPLACE_PARTNER_EXT_ID_VALUE"
+    }
+  ]
+}
